@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "server"
+version = "0.1.0"
+description = ""
+authors = ["teaishealthy <teaishealthy@protonmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+easy-trilateration = "^0.1.4"
+scapy = "^2.5.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pyright = "^1.1.342"
+
+[tool.pyright]
+reportMissingTypeStubs = false
+useLibraryCodeForTypes = true
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
