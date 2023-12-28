@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+
+  <body>
+    <div id="controls">
+      <label for="file" class="custom-file-upload">
+        Hintergrundbild auswählen
+      </label>
+      <input id="file" type="file" />
+      <button id="add">Sniffer hinzufügen</button>
+      <div class="flex-col gap-10">
+        <button id="save">Konfiguration herunterladen</button>
+        <button id="load-config">Konfiguration laden</button>
+      </div>
+      <div class="flex-col gap-10">
+        <button id="load-results">Ergebnisse laden</button>
+        <button id="delete-results">Ergebnisse löschen</button>
+      </div>
+      <div class="flex-col gap-10">
+        <div id="scale-content">
+          <div style="padding-right: 3px">Skalierung:</div>
+          <div id="skalierung"></div>
+        </div>
+        <button id="select-two">Zwei Punkte auswählen</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
